@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>hexa Social Network</title>
+</head>
+<body>
+
+    <div class="container">
+        
+        <div class="row">
+
+            <div class="col-md-4">
+                <div class="inner-container left-side">
+                    <div class="profile"></div>
+                    <!-- <img src="img/user.png" alt="" class="profile"> -->
+                    <p id="username"><b></b></p>
+                    <p id="email"></p>
+
+                    <button id="editAccount">Edit Account</button>
+                    <button id="logoutBtn">Logout</button>
+                </div>
+            </div>
+
+            <div class="col-md-8">
+                <div class="inner-container right-side">
+                    <form action="#" id="postForm">
+                        <textarea name="" id="postContent" placeholder="Type something..."></textarea>
+                        <button>Post</button>
+                    </form>
+
+                    <div id="allPostsWrapper"></div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="custom-modal">
+        <button id="close-modal">X</button>
+
+        <form action="#" id="editForm">
+            <h2>Edit Profile</h2>
+
+            <div class="input-group">
+                <label for="korisnicko_ime">Username</label>
+                <input type="text" name="korisnicko_ime" id="korisnicko_ime" placeholder="john.smith" class="input-field">
+            </div>
+
+            <div class="input-group">
+                <label for="edit_email">Email</label>
+                <input type="text" name="register_email" id="edit_email" placeholder="john.smith@mail.com" class="input-field">
+            </div>
+
+            <div class="input-group img">
+                <label for="image_input" id="img-label">
+                    Edit Profile Picture
+                    <i class="fa fa-2x fa-camera"></i>
+                    <input type="file" id="image_input" accept=" image/png, image/jpg, image/jpeg">
+                </label>
+                <span class="img-name"></span>
+            </div>
+
+            <div>
+                <button>Edit</button>
+            </div>
+
+        </form>
+
+        <hr>
+
+        <button id="deleteProfile">Delete Profile</button>
+    </div>
+
+
+    <script src="js/Session.js"></script>
+    <script src="js/User.js"></script>
+    <script src="js/Comment.js"></script>
+    <script src="js/Post.js"></script>
+    <!-- <script src="js/uploadImage.js"></script> -->
+    <script src="js/hexa.js"></script>
+    <script src="https://use.fontawesome.com/3a2eaf6206.js"></script>
+</body>
+</html>
